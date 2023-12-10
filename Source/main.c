@@ -9,8 +9,9 @@
 
 #include "oggplayer.h"
 
+
 void Initialise() {
-  
+	
 	VIDEO_Init();
 	WPAD_Init();
 	PAD_Init();
@@ -27,3 +28,6 @@ void Initialise() {
 	VIDEO_WaitVSync();
 	if(rmode->viTVMode&VI_NON_INTERLACE) VIDEO_WaitVSync();
 }
+int PlayOgg(const void *buffer, s32 len, int time_pos, int mode);
+int main() {
+	
