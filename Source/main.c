@@ -6,15 +6,16 @@
 #include <gccore.h>
 #include <unistd.h>
 #include <string.h>
+#include <wiiuse/wpad.h>
+#include <wiilight.h>
 
 #include "oggplayer.h"
 
 
 void Initialise() {
-	
+
 	VIDEO_Init();
 	WPAD_Init();
-	PAD_Init();
  
 	rmode = VIDEO_GetPreferredMode(NULL);
 
