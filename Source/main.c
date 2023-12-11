@@ -31,4 +31,10 @@ void Initialise() {
 }
 int PlayOgg(const void *buffer, s32 len, int time_pos, int mode);
 int main() {
-	
+u32 buttonsDown = WPAD_buttonsDown(0);
+WPAD_ScanPads();
+if (pressed & WPAD_BUTTON_HOME) {
+clrscr();
+exit(0);
+}
+}
